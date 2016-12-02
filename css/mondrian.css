@@ -5,35 +5,97 @@
   padding: 0;
 }
 
-.nav {
-  height: 65px;
-  width: 100%;
-  background-color: white;
+body {
+  color: black;
 }
 
-.main {
+h2 {
+  font-size: 1.2em;
+  padding-bottom: 7px;
+}
+
+a {
+  color: darkgrey;
+}
+
+.nav {
+  position: relative;
+  height: 65px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.feature {
+  position: relative;
   height: 400px;
   width: 100%;
-  background-color: black;
+  background-color: oldlace;
 }
 
 .detail {
+  position: relative;
   height: 120px;
   width: 100%;
 }
 
-#feature {
-  background-color: blue;
+.thumbnail-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 130px;
+  background-color: lightslategray;
+  border: 1px solid white;
 }
 
-#info {
-  background-color: green;
+.text-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin-left: 130px;
+  padding: 15px;
 }
 
-@media only screen and (min-width: 1000px) {
+#article-1 {
+  background-color: lavender;
+}
 
+#article-2 {
+  background-color: mistyrose;
 }
 
 @media only screen and (min-width: 600px) {
-
+  .feature {
+    height: 400px;
+  }
+  .detail {
+    height: auto;
+    width: 50%;
+  }
+  .thumbnail-image {
+    position: relative;
+    height: 170px;
+    width: 100%;
+  }
+  .text-box {
+    position: relative;
+    height: auto;
+    min-height: 100px;
+    margin: 0;
+  }
+  #article-1 {
+    float: left;
+  }
+  #article-2 {
+    float: right;
+  }
 }
+
+/*@media only screen and (min-width: 1000px) {
+  .feature {
+    height: auto;
+    min-height: 550px;
+    float: left;
+  }
+}*/
