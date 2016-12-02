@@ -5,36 +5,106 @@
   padding: 0;
 }
 
-body {
-  color: black;
+body, h1, h2, a, p {
+  font-family: sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+h1 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
 }
 
 h2 {
   font-size: 1.2em;
-  padding-bottom: 7px;
+  margin-bottom: 20px;
 }
 
 a {
-  color: darkgrey;
+  color: #D4D6D7;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 4px;
+}
+
+.dot {
+  color: #D4D6D7;
 }
 
 .nav {
   position: relative;
   height: 65px;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: white;
+}
+
+.nav img {
+  position: absolute;
+  top: 27.5%;
+  left: 30px;
+  height: 45%;
+  width: auto;
+}
+
+.nav ul {
+  display: none;
+  position: absolute;
+  right: 20px;
+  height: 100%;
+}
+
+.nav li a {
+  position: relative;
+  height: 65px;
+  line-height: 65px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: grey;
+}
+
+.nav li a:hover {
+  background-color: #e5e5e5;
+  text-decoration: none;
 }
 
 .feature {
   position: relative;
   height: 400px;
   width: 100%;
-  background-color: oldlace;
+  background-image: url(//think.storage.googleapis.com/images/mobile-shopping-searches-black-friday.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-info {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  height: 120px;
+  width: auto;
+  padding: 15px;
+  background-color: #263238;
+  color: white;
+}
+
+.feature-info p {
+  display: none;
 }
 
 .detail {
   position: relative;
-  height: 120px;
+  height: auto;
+  min-height: 120px;
   width: 100%;
 }
 
@@ -44,8 +114,6 @@ a {
   left: 0;
   height: 100%;
   width: 130px;
-  background-color: lightslategray;
-  border: 1px solid white;
 }
 
 .text-box {
@@ -58,16 +126,70 @@ a {
 }
 
 #article-1 {
-  background-color: lavender;
+  background-color: #0D47A1;
 }
 
 #article-2 {
-  background-color: mistyrose;
+  background-color: #009688;
+}
+
+#article-1 .thumbnail-image {
+  background-image: url(//think.storage.googleapis.com/images/measurement-growth-mobile-first-world-lg-min.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#article-2 .thumbnail-image {
+  background-image: url(//think.storage.googleapis.com/images/media-planning-tips-online-video-advertising-lg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  clear: both;
+  height: auto;
+  width: 100%;
+}
+
+.newsletter-bar {
+  display: block;
+  height: 170px;
+  width: 100%;
+  background-color: #37474F;
+}
+
+.lower-nav {
+  display: block;
+  height: 70px;
+  background-color: #263238;
 }
 
 @media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 1.7em;
+    padding-bottom: 20px;
+  }
+  .nav ul {
+    display: block;
+  }
+  .nav li {
+    display: inline;
+  }
   .feature {
-    height: 400px;
+    min-height: 400px;
+  }
+  .feature-info {
+    left: 30px;
+    bottom: 30px;
+    height: 300px;
+    width: 325px;
+    padding: 30px
+  }
+  .feature-info p {
+    display: block;
+    margin-top: 20px;
   }
   .detail {
     height: auto;
@@ -92,10 +214,35 @@ a {
   }
 }
 
-/*@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 860px) {
+  .nav ul {
+    display: none;
+  }
+  .nav button {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
   .feature {
-    height: auto;
-    min-height: 550px;
+    height: 550px;
+    width: 66%;
     float: left;
   }
-}*/
+  .detail-group {
+    float: right;
+    height: 550px;
+    width: 34%;
+  }
+  .detail {
+    float: right;
+    height: 50%;
+    width: 100%;
+  }
+  #article-1 {
+    float: none;
+  }
+  #article-2 {
+    float: none;
+  }
+}
