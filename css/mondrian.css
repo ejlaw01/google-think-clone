@@ -1,0 +1,39 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  height: 65px;
+  width: 100%;
+  background-color: white;
+}
+
+.main {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
+
+.detail {
+  height: 120px;
+  width: 100%;
+}
+
+#feature {
+  background-color: blue;
+}
+
+#info {
+  background-color: green;
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+}
