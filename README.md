@@ -1,4 +1,4 @@
-# Yerba Mate
+# Google Think Clone
 
 #### _a fully responsive copy of the top portion of the Think with Google homepage_
 
